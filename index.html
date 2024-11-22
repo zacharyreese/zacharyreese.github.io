@@ -41,11 +41,9 @@
                     </a>
                 </div>
                 <div id="social-section-top">
-                        <a href="mailto:zactreese@gmail.com" class="social-icon"><i class="fa fa-at fa-lg"></i></a>
+                        <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;" class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
                         <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/zachary-reese-07b0a0121" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="https://www.instagram.com/zacreese_/" class="social-icon"><i class="fa fa-instagram fa-lg"></i></a>
-
+                        <a href="https://linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
                     </div>
             </div>
         </div>
@@ -87,7 +85,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/packetsniff.png"></img>
+                            <img src="/images/packet_capture_icon.png"></img>
                             <span>C#</span>
                         </div>
                         <div class="card-details">
@@ -115,7 +113,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/halma.jpg"></img>
+                            <img src="/images/halma_game.png"></img>
                             <span>JavaFX</span>
                         </div>
                         <div class="card-details">
@@ -143,8 +141,8 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/mobius.jpg"></img>
-                            <span>C#</span>
+                            <img src="/images/mobius_strip.jpg"></img>
+                            <span>Java3D</span>
                         </div>
                         <div class="card-details">
                             <h3>Mobius Strip</h3>
@@ -266,8 +264,12 @@
 
                     <!--TODO: ADD IMAGE OF MYSELF-->
 
-                    <p>I am a 22 year old computer science major at Georgia Southern University. I was born and raised in Savannah, GA but currently reside in Statesboro, GA. I have had a passion for computers and computer software since I was young, building my first PC when I was 14 years old. I am constantly striving to become a more experienced programmer with my favorite language being Python, for its foundation in machine learning. I enjoy learning about AI and the future of automation in our society. On the side I love to bass fish, cook for me and my friends, and develop system tweaks for jailbroken iOS devices.</p>
-                    <p><br>This website is currently being hosted using Apache on my Raspberry Pi. You can find the source code <a href="https://github.com/zacharyreese/PersonalWebsite"><span>here</span></a>.</p>
+                    <p style="text-align: center; width: 100%; font-style: italic;">Bachelor of Science - Computer Science, Georgia Southern University.</p>
+                    <br>
+                    <p>Passionate software engineer and tech enthusiast. Proficient with a variety of back-end systems such as .NET, Javascript, and SQL databases. Implemented process managers using Kafka and NServiceBus. Experience creating and consuming APIs. Worked with distributed systems as well as monoliths. Knowledgeable on working with PHI, PII, and safe data storage practices. There is no problem too large or too difficult.</p>
+                    <br>
+                    <p>I have had a passion for computers and computer software since I was young, building my first PC when I was 14 years old. I am constantly striving to become a more experienced programmer with my favorite language being Python, for its foundation in machine learning. I enjoy learning about AI and the future of automation in our society. On the side I love to bass fish, cook for me and my friends, and develop system tweaks for jailbroken iOS devices.</p>
+                    <p><br>This website is currently being hosted using Apache on my Raspberry Pi. You can find the source code <a href="https://github.com/zacharyreese/zacharyreese.github.io"><span>here</span></a>.</p>
                 </div>
             </div>
 
@@ -276,13 +278,13 @@
                 <div class="section-content">
                     <ul class="timeline">
                         <li class="event" data-date="2015-2019">
-                            <h3><a href="https://cec.georgiasouthern.edu/cs/" target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
+                            <h3><a href="https://www.georgiasouthern.edu/cec/cs/degrees/computer-science-bs/" target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
                             <div>
                                 <ul>
-                                    <li>Senior Computer Science Undergraduate</li>
+                                    <li>Bachelor of Science - Computer Science</li>
                                     <li>College of Engineering and Computing</li>
                                     <li>Graduation Date: Fall 2019 (December 2019)</li>
-                                    <li>GPA: 3.0</li>
+                                    <li>GPA: 3.1</li>
                                 </ul>
                             </div>
                         </li>
@@ -302,6 +304,11 @@
                     <div id="otherSkills">
                         <ul>
                             <li>
+                                <h3>Years of Experience:</h3>
+                                <p><script>document.write(new Date().getFullYear() - 2019)</script>+ years of professional experience</p>
+                            </li>
+
+                            <li>
                                 <h3>Software Testing Methodologies:</h3>
                                 <p>Unit Testing, Integration Testing, Security Testing, Performance Testing</p>
                             </li>
@@ -313,12 +320,7 @@
 
                             <li>
                                 <h3>Databse Tools:</h3>
-                                <p>MySQL, SQL Server, SQL Developer, PostgreSQL</p>
-                            </li>
-
-                            <li>
-                                <h3>Operating Systems:</h3>
-                                <p>Windows, Windows Server 2008/2012, Debian Linux (Ubuntu, Raspbian)</p>
+                                <p>PostgreSQL, SQLite, MySQL, SQL Server</p>
                             </li>
 
                         </ul>
@@ -328,204 +330,6 @@
                     </div>
                 </div>
             </div>
-
-            <!--<div class="info-section">
-                <h1 class="section-header">Portfolio <a href="https://github.com/zacharyreese"><i class="fa fa-github fa-lg"></i></a><span></span></h1>
-                <div class="card-section-content">
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/radar.png"></img>
-                            <span>C#</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>Network Scanner</h3>
-                            <h4>Subnet scanner in C# that pings a given IP range</h4>
-                            <span></span>
-                            <p>To scan a range of IP addresses and request any sort of shared network folder, as well as use Windows Query Language (WQL) to gather data on the machine (Domain, Machine type, Windows version, etc.) if it was a windows machine. You can also send a force shutdown or restart command through this program.</p>
-                            <div class="card-footer">
-                                <div class="language">JavaFX</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/NetworkScanner"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/NetworkScanner/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/NetworkScanner#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="NetworkScanner" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/packetsniff.png"></img>
-                            <span>C#</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>Packet Capturer</h3>
-                            <h4>Network Packet Sniffer</h4>
-                            <span></span>
-                            <p>
-                                Allows the capturing of raw incoming packets of a local network. This application can be expanded upon to add parsing of different packet types. You can save a list of packets and open them in a txt file. This program also allows for sending custom packets to the network, allowing for DCHP spoofing, ARP attacks, and other Pen Testing processes.</p>
-                            <div class="card-footer">
-                                <div class="language">Java</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/PacketCapturer"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/PacketCapturer/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/PacketCapturer#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="PacketCapturer" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/halma.jpg"></img>
-                            <span>JavaFX</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>Halma Game</h3>
-                            <h4>2-Player Board Game</h4>
-                            <span></span>
-                            <p>
-                                JavaFX game of Halma, a game involving 2 players trying to move all of their piece into the opposing corner of the board before the other player. If you have ever played chinese checkers, this game will feel familiar.</p>
-                            <div class="card-footer">
-                                <div class="language">Java</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/HalmaGame"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/HalmaGame/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/HalmaGame#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="HalmaGame" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/mobius.jpg"></img>
-                            <span>C#</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>Mobius Strip</h3>
-                            <h4>3D Mobius Strip</h4>
-                            <span></span>
-                            <p>
-                                Simple rotating mobius strip with lighting and alpha rotation using IndexedQuadArrays and Java3D</p>
-                            <div class="card-footer">
-                                <div class="language">Java</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/MobiusStrip"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/MobiusStrip/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/MobiusStrip#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="MobiusStrip" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/kah.jpg">
-                            <span>Javascript/Java Servlets</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>Kahoot Against Humanity</h3>
-                            <h4>Online Multiplayer Card Game</h4>
-                            <span></span>
-                            <p>Kahoot Against Humanity (KAH) is an online card game similar to Cards Against Humanity. Players can create their own lobby and have others connect to their lobby using websockets. Each player is given a hand of cards with funny sayings, and each player votes on who has the funniest card combo.</p>
-                            <div class="card-footer">
-                                <div class="language">Java Servlets/Javascript</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/GroupGames"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/GroupGames/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/GroupGames#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="GroupGames" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-
-
-                                TODO: ADD Tooltip for github api
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/maze.png"></img>
-                            <span>Java3D</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>The Labyrinth</h3>
-                            <h4>A first-person maze game using Java3D</h4>
-                            <span></span>
-                            <p>Try to escape a 3-Dimensional maze using the arrow keys as guidance. This was created as a final project for a Computer Graphics course (CSCI 5437). The maze is created using a text file, where the characters 'b' and 'c' refer to two different wall types, 's' is the starting position, and 'e' is the ending position. The game is won when either the 'e' character is reached or the player leaves the maze array.</p>
-                            <div class="card-footer">
-                                <div class="language">JavaFX</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/Thelabyrinth"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/Thelabyrinth/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/Thelabyrinth#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="Thelabyrinth" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/chat.png"></img>
-                            <span>Java/Sockets</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>ChatterChamber</h3>
-                            <h4>Local network chat application</h4>
-                            <span></span>
-                            <p>To communicate with multiple devices over the same subnet. Messages are sent using a clinet and server. The client first joins the chat room using a server socket via IP address, and then sends a message to the server, which broadcasts the message to each client connected to the chat room. This application supports multiple treads allowing multiple users on one device.</p>
-                            <div class="card-footer">
-                                <div class="language">Java</div>
-                                <div class="links">
-                                    <a href="https://github.com/zacharyreese/ChatApp"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/ChatApp/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/ChatApp#readme"><i class="fa fa-external-link fa-lg"></i></a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="ChatApp" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>-->
 
             <div id="experience" class="info-section">
                 <h1 class="section-header">Work Experience<span></span></h1>
@@ -617,11 +421,10 @@
                         Personal Email: zactreese@gmail.com <br>
                     </div>
                     <div id="social-section">
-                        <a href="mailto:zactreese@gmail.com" class="social-icon"><i class="fa fa-at fa-lg"></i></a>
+                        <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;" class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
                         <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/zachary-reese-07b0a0121" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
-                        <a href="https://www.instagram.com/zacreese_/" class="social-icon"><i class="fa fa-instagram fa-lg"></i></a>
-
+                        <a href="https://www.linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
+                        
                     </div>
                 </div>
             </div>
