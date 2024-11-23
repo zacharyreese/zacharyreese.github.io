@@ -3,24 +3,11 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137786613-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137786613-1');
-    </script>
-
     <meta charset="utf-8">
     <title>Zac Reese</title>
     <link rel="icon" type="image/png" href="/images/bracket.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="projectcard.css" />
+    <link rel="stylesheet" type="text/css" href="projectcard.css"/>
 
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -30,31 +17,35 @@
 </head>
 
 <body>
-    <div id="header">
-        <div id="jumbo">
-            <div class="super-layer">
-                <div id="super-center">
-                    <a href="https://drive.google.com/file/d/1BKVOFSHKF14_FSmCYLCrNVdUmXyMYjyo/view?usp=sharing" target="_blank">
-                        <h1>Zachary Reese</h1>
-                        <p>Online Résumé</p>
-                    </a>
-                </div>
-                <div id="social-section-top">
-                        <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;" class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
-                        <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
-                        <a href="https://linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
-                    </div>
+<div id="header">
+    <div id="jumbo">
+        <div class="super-layer">
+            <div id="super-center">
+                <a href="https://drive.google.com/file/d/1BKVOFSHKF14_FSmCYLCrNVdUmXyMYjyo/view?usp=sharing"
+                   target="_blank">
+                    <h1>Zachary Reese</h1>
+                    <p>Online Résumé</p>
+                </a>
+            </div>
+            <div id="social-section-top">
+                <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;"
+                   class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
+                <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
+                <a href="https://linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="content">
-        <div class="centered-content">
-            
-            <div class="info-section">
-                <h1 class="section-header">Portfolio <a href="https://github.com/zacharyreese"><i class="fa fa-github fa-lg"></i></a><span></span></h1>
-                <div class="container">
-                    <div class=row>
+<div id="content">
+    <div class="centered-content">
+
+        <div class="info-section">
+            <h1 class="section-header">Portfolio <a href="https://github.com/zacharyreese"><i
+                    class="fa fa-github fa-lg"></i></a><span></span></h1>
+            <div class="container">
+                <div class=row>
+
                     <div class="card">
                         <div class="backdrop">
                             <img src="/images/radar.png" alt="Network Scanner">
@@ -64,17 +55,127 @@
                             <h3>Network Scanner</h3>
                             <h4>Subnet scanner in C# that pings a given IP range</h4>
                             <span></span>
-                            <p>To scan a range of IP addresses and request any sort of shared network folder, as well as use Windows Query Language (WQL) to gather data on the machine (Domain, Machine type, Windows version, etc.) if it was a windows machine. You can also send a force shutdown or restart command through this program.</p>
+                            <p>To scan a range of IP addresses and request any sort of shared network folder, as well as
+                                use Windows Query Language (WQL) to gather data on the machine (Domain, Machine type,
+                                Windows version, etc.) if it was a windows machine. You can also send a force shutdown
+                                or restart command through this program.</p>
                             <div class="card-footer">
                                 <div class="language">C#</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/NetworkScanner"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/NetworkScanner/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/NetworkScanner#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/NetworkScanner" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/NetworkScanner" target="_blank"
+                                       class="codeBtn">View Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="NetworkScanner" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/healthy_person.png" alt="HEB Vaccine Telegram Bot">
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>HEB Vaccine Telegram Bot</h3>
+                            <h4>Telegram Alert Bot</h4>
+                            <span></span>
+                            <p>During the COVID-19 pandemic, it was very difficult to get access to the vaccine when it was first released to the public. 
+                                This Telegram bot would automatically scrape HEB pharmacy appointments, and alert whenever there was an available timeslot. 
+                                Over 1000+ people used this bot to secure their appointent.</p>
+                            <div class="card-footer">
+                                <div class="language">Python</div>
+                                <div class="links"><a href="https://github.com/zacharyreese/HEBVaccineTelegramBot" target="_blank"
+                                       class="codeBtn">View Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="HEBVaccineTelegramBot" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/minimal_spanning_tree.png" alt="Minimal Spanning Tree">
+                            <span>Java</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Prim vs Kruskal NP</h3>
+                            <h4>Comparing minimal spanning tree algorithms</h4>
+                            <span></span>
+                            <p>A comparison of finding a minimum spanning tree in NP time using Prim and Kruskals algorithms.</p>
+                            <div class="card-footer">
+                                <div class="language">Java</div>
+                                <div class="links"><a href="https://github.com/zacharyreese/PrimVsKruskalNP" target="_blank"
+                                       class="codeBtn">View Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="PrimVsKruskalNP" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/chat.png" alt="Java Websocket Chat App">
+                            <span>Java/Sockets</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>ChatterChamber</h3>
+                            <h4>Local network chat application</h4>
+                            <span></span>
+                            <p>To communicate with multiple devices over the same subnet. Messages are sent using a
+                                clinet and server. The client first joins the chat room using a server socket via IP
+                                address, and then sends a message to the server, which broadcasts the message to each
+                                client connected to the chat room. This application supports multiple treads allowing
+                                multiple users on one device.</p>
+                            <div class="card-footer">
+                                <div class="language">Java</div>
+                                <div class="links">
+                                    <!--<a href="https://github.com/zacharyreese/ChatApp"><i class="fa fa-github fa-lg"></i></a>
+                                    <a href="https://github.com/zacharyreese/ChatApp/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
+                                    <a alt="Download this project" href="https://github.com/zacharyreese/ChatApp#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
+                                    <a href="https://github.com/zacharyreese/ChatApp" target="_blank" class="codeBtn">View
+                                        Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="ChatApp" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/bracket_upscaled.png" alt="zacreese.com">
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>zacreese.com</h3>
+                            <h4>This website! :D</h4>
+                            <span></span>
+                            <p>A simple static website to showcase my portfolio and contact info.</p>
+                            <div class="card-footer">
+                                <div class="language">Web Stack</div>
+                                <div class="links"><a href="https://github.com/zacharyreese/zacharyreese.github.io" target="_blank"
+                                       class="codeBtn">View Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="zacharyreese.github.io" class="card-graph">
                                 <i class="fa fa-plus-circle"></i>
                                 <h4>Languages</h4>
                                 <span></span>
@@ -92,17 +193,73 @@
                             <h4>Network Packet Sniffer</h4>
                             <span></span>
                             <p>
-                                Allows the capturing of raw incoming packets of a local network. This application can be expanded upon to add parsing of different packet types. You can save a list of packets and open them in a txt file. This program also allows for sending custom packets to the network, allowing for DCHP spoofing, ARP attacks, and other Pen Testing processes.</p>
+                                Allows the capturing of raw incoming packets of a local network. This application can be
+                                expanded upon to add parsing of different packet types. You can save a list of packets
+                                and open them in a txt file. This program also allows for sending custom packets to the
+                                network, allowing for DCHP spoofing, ARP attacks, and other Pen Testing processes.</p>
                             <div class="card-footer">
                                 <div class="language">Java</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/PacketCapturer"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/PacketCapturer/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/PacketCapturer#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/PacketCapturer" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/PacketCapturer" target="_blank"
+                                       class="codeBtn">View Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="PacketCapturer" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/binance.png" alt="Firefox Binance Addon">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Firefox Binance Extension</h3>
+                            <h4>Bitcoin to USD Price Converter</h4>
+                            <span></span>
+                            <p>Converts the BTC value of your crypto currency assets to USD by fetching the most current BTCUSDT price from Binance's API and converting the values.</p>
+                            <div class="card-footer">
+                                <div class="language">Javascript</div>
+                                <div class="links"><a href="https://github.com/zacharyreese/BinanceBTCtoUSDFirefoxAddon" target="_blank"
+                                       class="codeBtn">View Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="BinanceBTCtoUSDFirefoxAddon" class="card-graph">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Languages</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="backdrop">
+                            <img src="/images/rust.png" alt="Rust Icon">
+                            <span>Groovy</span>
+                        </div>
+                        <div class="card-details">
+                            <h3>Rust Crossbreeding Calculator</h3>
+                            <h4>Find desired plant gene in Rust</h4>
+                            <span></span>
+                            <p>Find your desired gene for plants in Rust based on all existing genes
+
+                                Based on <a href="https://www.reddit.com/r/playrust/comments/gu2fcr/seed_cross_breeding_guide_for_farming_20/" target="_blank">this chart.</a>
+                                
+                                Gets desired gene (ex. YYYGG) and if that combination is possible with your current list of genes, will return a list of genes needed to crossbreed into the desired gene.</p>
+                            <div class="card-footer">
+                                <div class="language">Groovy</div>
+                                <div class="links"><a href="https://github.com/zacharyreese/RustCrossbreedingCalculator" target="_blank"
+                                       class="codeBtn">View Code</a>
+                                </div>
+                            </div>
+                            <div data-user="zacharyreese" data-repo="RustCrossbreedingCalculator" class="card-graph">
                                 <i class="fa fa-plus-circle"></i>
                                 <h4>Languages</h4>
                                 <span></span>
@@ -120,14 +277,17 @@
                             <h4>2-Player Board Game</h4>
                             <span></span>
                             <p>
-                                JavaFX game of Halma, a game involving 2 players trying to move all of their piece into the opposing corner of the board before the other player. If you have ever played chinese checkers, this game will feel familiar.</p>
+                                JavaFX game of Halma, a game involving 2 players trying to move all of their piece into
+                                the opposing corner of the board before the other player. If you have ever played
+                                chinese checkers, this game will feel familiar.</p>
                             <div class="card-footer">
                                 <div class="language">Java</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/HalmaGame"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/HalmaGame/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/HalmaGame#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/HalmaGame" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/HalmaGame" target="_blank" class="codeBtn">View
+                                        Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="HalmaGame" class="card-graph">
@@ -148,14 +308,16 @@
                             <h4>3D Mobius Strip</h4>
                             <span></span>
                             <p>
-                                Simple rotating mobius strip with lighting and alpha rotation using IndexedQuadArrays and Java3D</p>
+                                Simple rotating mobius strip with lighting and alpha rotation using IndexedQuadArrays
+                                and Java3D</p>
                             <div class="card-footer">
                                 <div class="language">Java</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/MobiusStrip"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/MobiusStrip/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/MobiusStrip#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/MobiusStrip" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/MobiusStrip" target="_blank"
+                                       class="codeBtn">View Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="MobiusStrip" class="card-graph">
@@ -175,14 +337,18 @@
                             <h3>Kahoot Against Humanity</h3>
                             <h4>Online Multiplayer Card Game</h4>
                             <span></span>
-                            <p>Kahoot Against Humanity (KAH) is an online card game similar to Cards Against Humanity. Players can create their own lobby and have others connect to their lobby using websockets. Each player is given a hand of cards with funny sayings, and each player votes on who has the funniest card combo.</p>
+                            <p>Kahoot Against Humanity (KAH) is an online card game similar to Cards Against Humanity.
+                                Players can create their own lobby and have others connect to their lobby using
+                                websockets. Each player is given a hand of cards with funny sayings, and each player
+                                votes on who has the funniest card combo.</p>
                             <div class="card-footer">
                                 <div class="language">Javascript</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/GroupGames"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/GroupGames/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/GroupGames#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/GroupGames" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/GroupGames" target="_blank"
+                                       class="codeBtn">View Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="GroupGames" class="card-graph">
@@ -197,7 +363,6 @@
                     </div>
 
 
-
                     <div class="card">
                         <div class="backdrop">
                             <img src="/images/maze.png" alt="Java3D Maze Game">
@@ -207,14 +372,16 @@
                             <h3>The Labyrinth</h3>
                             <h4>A first-person maze game using Java3D</h4>
                             <span></span>
-                            <p>Try to escape a 3-Dimensional maze using the arrow keys as guidance. 3 different map styles.</p>
+                            <p>Try to escape a 3-Dimensional maze using the arrow keys as guidance. 3 different map
+                                styles.</p>
                             <div class="card-footer">
                                 <div class="language">JavaFX</div>
                                 <div class="links">
                                     <!--<a href="https://github.com/zacharyreese/Thelabyrinth"><i class="fa fa-github fa-lg"></i></a>
                                     <a href="https://github.com/zacharyreese/Thelabyrinth/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
                                     <a alt="Download this project" href="https://github.com/zacharyreese/Thelabyrinth#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/Thelabyrinth" target="_blank" class="codeBtn">View Code</a>
+                                    <a href="https://github.com/zacharyreese/Thelabyrinth" target="_blank"
+                                       class="codeBtn">View Code</a>
                                 </div>
                             </div>
                             <div data-user="zacharyreese" data-repo="Thelabyrinth" class="card-graph">
@@ -225,254 +392,267 @@
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="backdrop">
-                            <img src="/images/chat.png" alt="Java Websocket Chat App">
-                            <span>Java/Sockets</span>
-                        </div>
-                        <div class="card-details">
-                            <h3>ChatterChamber</h3>
-                            <h4>Local network chat application</h4>
-                            <span></span>
-                            <p>To communicate with multiple devices over the same subnet. Messages are sent using a clinet and server. The client first joins the chat room using a server socket via IP address, and then sends a message to the server, which broadcasts the message to each client connected to the chat room. This application supports multiple treads allowing multiple users on one device.</p>
-                            <div class="card-footer">
-                                <div class="language">Java</div>
-                                <div class="links">
-                                    <!--<a href="https://github.com/zacharyreese/ChatApp"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="https://github.com/zacharyreese/ChatApp/archive/master.zip"><i class="fa fa-download fa-lg"></i></a>
-                                    <a alt="Download this project" href="https://github.com/zacharyreese/ChatApp#readme"><i class="fa fa-external-link fa-lg"></i></a>-->
-                                    <a href="https://github.com/zacharyreese/ChatApp" target="_blank" class="codeBtn">View Code</a>
-                                </div>
-                            </div>
-                            <div data-user="zacharyreese" data-repo="ChatApp" class="card-graph">
-                                <i class="fa fa-plus-circle"></i>
-                                <h4>Languages</h4>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-
-    </div>
                 </div>
             </div>
-            
-            <div class="info-section">
-<!--                <div id="mepic"><img id="me" src="https://i.imgur.com/PsaiVvx.jpg" alt="Me in a suit"> </div>-->
-                <h1 class="section-header">About Me<span></span></h1>
-                <div class="section-content">
-
-                    <!--TODO: ADD IMAGE OF MYSELF-->
-
-                    <p style="text-align: center; width: 100%; font-style: italic;">Bachelor of Science - Computer Science, Georgia Southern University.</p>
-                    <br>
-                    <p>Passionate software engineer and tech enthusiast. Proficient with a variety of back-end systems such as .NET, Javascript, and SQL databases. Implemented process managers using Kafka and NServiceBus. Experience creating and consuming APIs. Worked with distributed systems as well as monoliths. Knowledgeable on working with PHI, PII, and safe data storage practices. There is no problem too large or too difficult.</p>
-                    <br>
-                    <p>I have had a passion for computers and computer software since I was young, building my first PC when I was 14 years old. I am constantly striving to become a more experienced programmer with my favorite language being Python, for its foundation in machine learning. I enjoy learning about AI and the future of automation in our society. On the side I love to bass fish, cook for me and my friends, and develop system tweaks for jailbroken iOS devices.</p>
-                    <p><br>This website is currently being hosted using Apache on my Raspberry Pi. You can find the source code <a href="https://github.com/zacharyreese/zacharyreese.github.io"><span>here</span></a>.</p>
-                </div>
-            </div>
-
-            <div class="info-section">
-                <h1 class="section-header">Skills<span></span></h1>
-                <div class="section-content">
-                    <div id="skillsDisplay">
-                        <span class="tooltiptext">Refresh page for cool animation!</span>
-                        <h3>Languages</h3>
-                        <canvas id="skillsChart"></canvas>
-                        <div id="skillsLegend"></div>
-                    </div>
-                    <div id="otherSkills">
-                        <ul>
-                            <li>
-                                <h3>Years of Experience:</h3>
-                                <p><script>document.write(new Date().getFullYear() - 2019)</script>+ years of professional experience</p>
-                            </li>
-
-                            <li>
-                                <h3>Software Testing Methodologies:</h3>
-                                <p>Unit Testing, Integration Testing, Security Testing, Performance Testing</p>
-                            </li>
-
-                            <li>
-                                <h3>Software Development Methodologies:</h3>
-                                <p>Scrum, Agile, Waterfall, DevOps</p>
-                            </li>
-
-                            <li>
-                                <h3>Databse Tools:</h3>
-                                <p>PostgreSQL, SQLite, MySQL, SQL Server</p>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div>
-                        <h3></h3>
-                    </div>
-                </div>
-            </div>
-
-            <div id="education" class="info-section">
-                <h1 class="section-header">Education<span></span></h1>
-                <div class="section-content">
-                    <ul class="timeline">
-                        <li class="event" data-date="2015-2019">
-                            <h3><a href="https://www.georgiasouthern.edu/cec/cs/degrees/computer-science-bs/" target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
-                            <div>
-                                <ul>
-                                    <li>Bachelor of Science - Computer Science</li>
-                                    <li>College of Engineering and Computing</li>
-                                    <li>Graduation Date: Fall 2019 (December 2019)</li>
-                                    <li>GPA: 3.1</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="experience" class="info-section">
-                <h1 class="section-header">Work Experience<span></span></h1>
-                <div class="section-content">
-                    <ul class="timeline">
-                        <li class="event" data-date="June 2024 - Oct 2024">
-                            <h3>CVS Health - Software Engineer III</h3>
-                            <h5>Remote</h5>
-                            <div>
-                                <p>● Lead effort to migrate legacy .NET core clinical services application to new .NET 8</p>
-                                <p>● Facilitated cross-team collaboration and communication to handle the project</p>
-                                <p>● Integrated Hangfire library to process background jobs to automatically create and delivery PDFs for clients</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="Feb 2023 - June 2024">
-                            <h3>Signify Health - Software Engineer III</h3>
-                            <h5>Austin, TX</h5>
-                            <div>
-                                <p>● Migrated Java monolith to .NET/C# process manager</p>
-                                <p>● Created pub/sub kafka queue to ingest data using NServiceBus</p>
-                                <p>● Integrated custom Salesforce API integration</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="March 2021 - Feb 2023">
-                            <h3>Signify Health - Software Engineer II</h3>
-                            <h5>Austin, TX</h5>
-                            <div>
-                                <p>● Worked with Postgres to create client specific rules for onboarding</p>
-                                <p>● Integrated SmartyStreets API for real time member address validations</p>
-                                <p>● Helped manage AWS EC2 instance to run our application</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="Mar 2020 - Mar 2021">
-                            <h3>Signify Health - Jr. Software Engineer</h3>
-                            <h5>Austin, TX</h5>
-                            <div>
-                                <p>● Developed Java based healthcare monolith</p>
-                                <p>● Worked with engineering team using Kanban methodologies</p>
-                                <p>● Learned how to handle and store sensitive PHI and PII healthcare data</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2019 - Feb 2020">
-                            <h3>Freelance Web Developer</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Design and support websites for clients such as <a href="https://www.ghostlifestyle.com/" target="_blank">GhostLifestyle</a>, <a href="https://mytop.us/" target="_blank">MyTop</a>, and <a href="http://onelovefest.com/" target="_blank">OneLoveFest</a></p>
-                                <p>● Responsibilities include implementing product shops using either Shopify or WooCommerce</p>
-                                <p>● Designing pages from the ground up using HTML/CSS/JS/MySQL</p>
-                                <p>● Improve SEO using basic techniques</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2018 - Present">
-                            <h3>Three Oaks Realty - IT Technician</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Design and implement Customer Relationship Management (CRM) system for company to manage and automate email notifications for client updates using MySQL and SSIS in Visual Studio</p>
-                                <p>● Helped migrate company email and contact list from Outlook to GMail</p>
-                                <p>● General tech support working with both Mac and PC</p>
-                                <p>● Created personal websites for company owner</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2018 - Jan 2019">
-                            <h3>Sandfly BBQ - Flat top cook</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Prepared all food items in 30-seat BBQ restaurant with lunch and dinner service</p>
-                                <p>● Trained, managed, and guided 4 other line cooks on how to work productively and efficiently in a high stress workplace</p>
-                                <p>● Due to large volume of work and limited time, I improved my problem solving skills to accomplish a larger goal by breaking the problems down into smaller and smarter problems</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2017 - August 2017">
-                            <h3>Sweet Potatoes - Front of House Manager</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Managed a team of 4-5 servers to make sure maximum efficiency and customer satisfaction were achieved</p>
-                                <p>● Interacted with all customers, whether it be at a table, at the front desk, or over the phone</p>
-                                <p>● Used strong leadership skills to make sure that the kitchen staff and floor staff were operating on the same wavelength to avoid delays as well as issues with food or customers</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2017 - Aug 2017">
-                            <h3>McManamy Jackson Law Firm - Data Entry</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Faced with large amount of work load every day, it was critical that I was focused and determined all throughout the day to finish inputting and sorting housing orders.</p>
-                                <p>● Had friendly face to face customer interaction when working the front desk, as well as taking phone calls and processing orders and creating schedules.</p>
-                                <p>● Worked with and processed large amount of money which taught me how to stay organized and allowed me to be proficient at Microsoft excel.</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2017 - Aug 2017">
-                            <h3>Three Oaks Realty - Real Estate Intern</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Learned the ins-and-outs of the process of buying and selling realty</p>
-                                <p>● Able to be friendly and greet new people by answering phone calls for representative at the company and transferring them to the people they needed to talk with</p>
-                                <p>General technical support as I was good with computers, but not an official IT worker at this point</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2017 - Aug 2017">
-                            <h3>Flying Fish Seafood - Restaurant Attendant</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Learned to cooperate and work with many others in a hectic restaurant environment</p>
-                                <p>● Worked quickly and efficiently to keep the flow of people in and out of the restaurant at a constant rate</p>
-                                <p>● Was able to work long and strange hours without difficulty</p>
-                            </div>
-                        </li>
-                        <li class="event" data-date="May 2017 - Aug 2017">
-                            <h3>Terracon Environmental Engineering - Intern</h3>
-                            <h5>Savannah, GA</h5>
-                            <div>
-                                <p>● Gained hands-on experience and learned all about the fundamentals and work of environmentalist engineers</p>
-                                <p>● Acquired knowledge of underground chemical retrieval and testing by traveling to many different sites and purging groundwater for testing</p>
-                                <p>● Was able to determine the strength and sturdiness of cement and concrete for building sites by weighing, measuring, and crushing concrete cylinders that were taken from job sites.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-section">
-                <h1 class="section-header">Contact Me<span></span></h1>
-                <div class="section-content">
-                    <div id="contact-info">
-                        Phone Number: (912)-656-0931 <br>
-                        Personal Email: zactreese@gmail.com <br>
-                    </div>
-                    <div id="social-section">
-                        <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;" class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
-                        <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div id="footer">
-
-            </div>
-            <script src="js/main.js"></script>
-            <script src="js/Chart.min.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/projectcard.js"></script>
         </div>
+
+        <div class="info-section">
+            <!--                <div id="mepic"><img id="me" src="https://i.imgur.com/PsaiVvx.jpg" alt="Me in a suit"> </div>-->
+            <h1 class="section-header">About Me<span></span></h1>
+            <div class="section-content">
+
+                <!--TODO: ADD IMAGE OF MYSELF-->
+
+                <p style="text-align: center; width: 100%; font-style: italic;">Bachelor of Science - Computer Science,
+                    Georgia Southern University.</p>
+                <br>
+                <p>Passionate software engineer and tech enthusiast. Proficient with a variety of back-end systems such
+                    as .NET, Javascript, and SQL databases. Implemented process managers using Kafka and NServiceBus.
+                    Experience creating and consuming APIs. Worked with distributed systems as well as monoliths.
+                    Knowledgeable on working with PHI, PII, and safe data storage practices. There is no problem too
+                    large or too difficult.</p>
+                <br>
+                <p>I have had a passion for computers and computer software since I was young, building my first PC when
+                    I was 14 years old. I am constantly striving to become a more experienced programmer with my
+                    favorite language being Python, for its foundation in machine learning. I enjoy learning about AI
+                    and the future of automation in our society. On the side I love to bass fish, cook for me and my
+                    friends, and develop system tweaks for jailbroken iOS devices.</p>
+                <p><br>This website is currently being hosted using Apache on my Raspberry Pi behind Cloudflare Tunnels. You can find the source
+                    code <a href="https://github.com/zacharyreese/zacharyreese.github.io"><span>here</span></a>.</p>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h1 class="section-header">Skills<span></span></h1>
+            <div class="section-content">
+                <div id="skillsDisplay">
+                    <span class="tooltiptext">Refresh page for cool animation!</span>
+                    <h3>Languages</h3>
+                    <canvas id="skillsChart"></canvas>
+                    <div id="skillsLegend"></div>
+                </div>
+                <div id="otherSkills">
+                    <ul>
+                        <li>
+                            <h3>Years of Experience:</h3>
+                            <p>
+                                <script>document.write(new Date().getFullYear() - 2019)</script>
+                                + years of professional experience
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3>Software Testing Methodologies:</h3>
+                            <p>Unit Testing, Integration Testing, Security Testing, Performance Testing</p>
+                        </li>
+
+                        <li>
+                            <h3>Software Development Methodologies:</h3>
+                            <p>Scrum, Agile, Waterfall, DevOps</p>
+                        </li>
+
+                        <li>
+                            <h3>Databse Tools:</h3>
+                            <p>PostgreSQL, SQLite, MySQL, SQL Server</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="info-section">
+            <h1 class="section-header">Education<span></span></h1>
+            <div class="section-content">
+                <ul class="timeline">
+                    <li class="event" data-date="2015-2019">
+                        <h3><a href="https://www.georgiasouthern.edu/cec/cs/degrees/computer-science-bs/"
+                               target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
+                        <div>
+                            <ul>
+                                <li>Bachelor of Science - Computer Science</li>
+                                <li>College of Engineering and Computing</li>
+                                <li>Graduation Date: Fall 2019 (December 2019)</li>
+                                <li>GPA: 3.1</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="experience" class="info-section">
+            <h1 class="section-header">Work Experience<span></span></h1>
+            <div class="section-content">
+                <ul class="timeline">
+                    <li class="event" data-date="June 2024 - Oct 2024">
+                        <h3>CVS Health - Software Engineer III</h3>
+                        <h5>Remote</h5>
+                        <div>
+                            <p>● Lead effort to migrate legacy .NET core clinical services application to new .NET 8</p>
+                            <p>● Facilitated cross-team collaboration and communication to handle the project</p>
+                            <p>● Integrated Hangfire library to process background jobs to automatically create and
+                                delivery PDFs for clients</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="Feb 2023 - June 2024">
+                        <h3>Signify Health - Software Engineer III</h3>
+                        <h5>Austin, TX</h5>
+                        <div>
+                            <p>● Migrated Java monolith to .NET/C# process manager</p>
+                            <p>● Created pub/sub kafka queue to ingest data using NServiceBus</p>
+                            <p>● Integrated custom Salesforce API integration</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="March 2021 - Feb 2023">
+                        <h3>Signify Health - Software Engineer II</h3>
+                        <h5>Austin, TX</h5>
+                        <div>
+                            <p>● Worked with Postgres to create client specific rules for onboarding</p>
+                            <p>● Integrated SmartyStreets API for real time member address validations</p>
+                            <p>● Helped manage AWS EC2 instance to run our application</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="Mar 2020 - Mar 2021">
+                        <h3>Signify Health - Jr. Software Engineer</h3>
+                        <h5>Austin, TX</h5>
+                        <div>
+                            <p>● Developed Java based healthcare monolith</p>
+                            <p>● Worked with engineering team using Kanban methodologies</p>
+                            <p>● Learned how to handle and store sensitive PHI and PII healthcare data</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2019 - Feb 2020">
+                        <h3>Freelance Web Developer</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Design and support websites for clients such as <a
+                                    href="https://www.ghostlifestyle.com/" target="_blank">GhostLifestyle</a>, <a
+                                    href="https://mytop.us/" target="_blank">MyTop</a>, and <a
+                                    href="http://onelovefest.com/" target="_blank">OneLoveFest</a></p>
+                            <p>● Responsibilities include implementing product shops using either Shopify or
+                                WooCommerce</p>
+                            <p>● Designing pages from the ground up using HTML/CSS/JS/MySQL</p>
+                            <p>● Improve SEO using basic techniques</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2018 - Present">
+                        <h3>Three Oaks Realty - IT Technician</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Design and implement Customer Relationship Management (CRM) system for company to
+                                manage and automate email notifications for client updates using MySQL and SSIS in
+                                Visual Studio</p>
+                            <p>● Helped migrate company email and contact list from Outlook to GMail</p>
+                            <p>● General tech support working with both Mac and PC</p>
+                            <p>● Created personal websites for company owner</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2018 - Jan 2019">
+                        <h3>Sandfly BBQ - Flat top cook</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Prepared all food items in 30-seat BBQ restaurant with lunch and dinner service</p>
+                            <p>● Trained, managed, and guided 4 other line cooks on how to work productively and
+                                efficiently in a high stress workplace</p>
+                            <p>● Due to large volume of work and limited time, I improved my problem solving skills to
+                                accomplish a larger goal by breaking the problems down into smaller and smarter
+                                problems</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2017 - August 2017">
+                        <h3>Sweet Potatoes - Front of House Manager</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Managed a team of 4-5 servers to make sure maximum efficiency and customer satisfaction
+                                were achieved</p>
+                            <p>● Interacted with all customers, whether it be at a table, at the front desk, or over the
+                                phone</p>
+                            <p>● Used strong leadership skills to make sure that the kitchen staff and floor staff were
+                                operating on the same wavelength to avoid delays as well as issues with food or
+                                customers</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2017 - Aug 2017">
+                        <h3>McManamy Jackson Law Firm - Data Entry</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Faced with large amount of work load every day, it was critical that I was focused and
+                                determined all throughout the day to finish inputting and sorting housing orders.</p>
+                            <p>● Had friendly face to face customer interaction when working the front desk, as well as
+                                taking phone calls and processing orders and creating schedules.</p>
+                            <p>● Worked with and processed large amount of money which taught me how to stay organized
+                                and allowed me to be proficient at Microsoft excel.</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2017 - Aug 2017">
+                        <h3>Three Oaks Realty - Real Estate Intern</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Learned the ins-and-outs of the process of buying and selling realty</p>
+                            <p>● Able to be friendly and greet new people by answering phone calls for representative at
+                                the company and transferring them to the people they needed to talk with</p>
+                            <p>General technical support as I was good with computers, but not an official IT worker at
+                                this point</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2017 - Aug 2017">
+                        <h3>Flying Fish Seafood - Restaurant Attendant</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Learned to cooperate and work with many others in a hectic restaurant environment</p>
+                            <p>● Worked quickly and efficiently to keep the flow of people in and out of the restaurant
+                                at a constant rate</p>
+                            <p>● Was able to work long and strange hours without difficulty</p>
+                        </div>
+                    </li>
+                    <li class="event" data-date="May 2017 - Aug 2017">
+                        <h3>Terracon Environmental Engineering - Intern</h3>
+                        <h5>Savannah, GA</h5>
+                        <div>
+                            <p>● Gained hands-on experience and learned all about the fundamentals and work of
+                                environmentalist engineers</p>
+                            <p>● Acquired knowledge of underground chemical retrieval and testing by traveling to many
+                                different sites and purging groundwater for testing</p>
+                            <p>● Was able to determine the strength and sturdiness of cement and concrete for building
+                                sites by weighing, measuring, and crushing concrete cylinders that were taken from job
+                                sites.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h1 class="section-header">Contact Me<span></span></h1>
+            <div class="section-content">
+                <div id="contact-info">
+                    Phone Number: (912)-656-0931 <br>
+                    Personal Email: zactreese@gmail.com <br>
+                </div>
+                <div id="social-section">
+                    <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;"
+                       class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
+                    <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/zac-reese" class="social-icon"><i
+                            class="fa fa-linkedin fa-lg"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/projectcard.js"></script>
     </div>
+</div>
 </body>
 
 </html>
