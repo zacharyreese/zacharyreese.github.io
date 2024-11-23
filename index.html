@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -27,7 +27,6 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -58,7 +57,7 @@
                     <div class=row>
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/radar.png"></img>
+                            <img src="/images/radar.png" alt="Network Scanner">
                             <span>C#</span>
                         </div>
                         <div class="card-details">
@@ -85,7 +84,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/packet_capture_icon.png"></img>
+                            <img src="/images/packet_capture_icon.png" alt="Packet Capture">
                             <span>C#</span>
                         </div>
                         <div class="card-details">
@@ -113,7 +112,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/halma_game.png"></img>
+                            <img src="/images/halma_game.png" alt="Halma Game">
                             <span>JavaFX</span>
                         </div>
                         <div class="card-details">
@@ -141,7 +140,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/mobius_strip.jpg"></img>
+                            <img src="/images/mobius_strip.jpg" alt="Mobius Strip">
                             <span>Java3D</span>
                         </div>
                         <div class="card-details">
@@ -169,7 +168,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/kah.jpg">
+                            <img src="/images/kah.jpg" alt="Kahoot Against Humanity Game">
                             <span>Javascript/Java Servlets</span>
                         </div>
                         <div class="card-details">
@@ -201,7 +200,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/maze.png"></img>
+                            <img src="/images/maze.png" alt="Java3D Maze Game">
                             <span>Java3D</span>
                         </div>
                         <div class="card-details">
@@ -228,7 +227,7 @@
 
                     <div class="card">
                         <div class="backdrop">
-                            <img src="/images/chat.png"></img>
+                            <img src="/images/chat.png" alt="Java Websocket Chat App">
                             <span>Java/Sockets</span>
                         </div>
                         <div class="card-details">
@@ -273,25 +272,6 @@
                 </div>
             </div>
 
-            <div id="education" class="info-section">
-                <h1 class="section-header">Education<span></span></h1>
-                <div class="section-content">
-                    <ul class="timeline">
-                        <li class="event" data-date="2015-2019">
-                            <h3><a href="https://www.georgiasouthern.edu/cec/cs/degrees/computer-science-bs/" target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
-                            <div>
-                                <ul>
-                                    <li>Bachelor of Science - Computer Science</li>
-                                    <li>College of Engineering and Computing</li>
-                                    <li>Graduation Date: Fall 2019 (December 2019)</li>
-                                    <li>GPA: 3.1</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="info-section">
                 <h1 class="section-header">Skills<span></span></h1>
                 <div class="section-content">
@@ -331,11 +311,66 @@
                 </div>
             </div>
 
+            <div id="education" class="info-section">
+                <h1 class="section-header">Education<span></span></h1>
+                <div class="section-content">
+                    <ul class="timeline">
+                        <li class="event" data-date="2015-2019">
+                            <h3><a href="https://www.georgiasouthern.edu/cec/cs/degrees/computer-science-bs/" target="_blank">Georgia Southern University <i class="fa fa-external-link"></i></a></h3>
+                            <div>
+                                <ul>
+                                    <li>Bachelor of Science - Computer Science</li>
+                                    <li>College of Engineering and Computing</li>
+                                    <li>Graduation Date: Fall 2019 (December 2019)</li>
+                                    <li>GPA: 3.1</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div id="experience" class="info-section">
                 <h1 class="section-header">Work Experience<span></span></h1>
                 <div class="section-content">
                     <ul class="timeline">
-                        <li class="event" data-date="May 2019 - Present">
+                        <li class="event" data-date="June 2024 - Oct 2024">
+                            <h3>CVS Health - Software Engineer III</h3>
+                            <h5>Remote</h5>
+                            <div>
+                                <p>● Lead effort to migrate legacy .NET core clinical services application to new .NET 8</p>
+                                <p>● Facilitated cross-team collaboration and communication to handle the project</p>
+                                <p>● Integrated Hangfire library to process background jobs to automatically create and delivery PDFs for clients</p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="Feb 2023 - June 2024">
+                            <h3>Signify Health - Software Engineer III</h3>
+                            <h5>Austin, TX</h5>
+                            <div>
+                                <p>● Migrated Java monolith to .NET/C# process manager</p>
+                                <p>● Created pub/sub kafka queue to ingest data using NServiceBus</p>
+                                <p>● Integrated custom Salesforce API integration</p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="March 2021 - Feb 2023">
+                            <h3>Signify Health - Software Engineer II</h3>
+                            <h5>Austin, TX</h5>
+                            <div>
+                                <p>● Worked with Postgres to create client specific rules for onboarding</p>
+                                <p>● Integrated SmartyStreets API for real time member address validations</p>
+                                <p>● Helped manage AWS EC2 instance to run our application</p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="Mar 2020 - Mar 2021">
+                            <h3>Signify Health - Jr. Software Engineer</h3>
+                            <h5>Austin, TX</h5>
+                            <div>
+                                <p>● Developed Java based healthcare monolith</p>
+                                <p>● Worked with engineering team using Kanban methodologies</p>
+                                <p>● Learned how to handle and store sensitive PHI and PII healthcare data</p>
+                            </div>
+                        </li>
+                        <li class="event" data-date="May 2019 - Feb 2020">
                             <h3>Freelance Web Developer</h3>
                             <h5>Savannah, GA</h5>
                             <div>
