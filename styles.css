@@ -475,4 +475,26 @@ body {
         margin-left: -5px;
     }
 }
+
+/* Toast Notification */
+.toast {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    transition: visibility 0.5s, opacity 0.5s linear;
+    opacity: 0;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
  

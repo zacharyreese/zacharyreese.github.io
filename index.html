@@ -21,14 +21,13 @@
     <div id="jumbo">
         <div class="super-layer">
             <div id="super-center">
-                <a href="https://drive.google.com/file/d/1BKVOFSHKF14_FSmCYLCrNVdUmXyMYjyo/view?usp=sharing"
-                   target="_blank">
+                <a href="#" onclick="copyEmailAndShowToast(); return false;">
                     <h1>Zachary Reese</h1>
                     <p>Online Résumé</p>
                 </a>
             </div>
             <div id="social-section-top">
-                <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;"
+                <a href="#" onclick="copyEmailAndShowToast(); return false;"
                    class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
                 <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
                 <a href="https://linkedin.com/in/zac-reese" class="social-icon"><i class="fa fa-linkedin fa-lg"></i></a>
@@ -613,7 +612,7 @@
                         <h3>Terracon Environmental Engineering - Intern</h3>
                         <h5>Savannah, GA</h5>
                         <div>
-                            <p>● Gained hands-on experience and learned all about the fundamentals and work of
+                            <p> Gained hands-on experience and learned all about the fundamentals and work of
                                 environmentalist engineers</p>
                             <p>● Acquired knowledge of underground chemical retrieval and testing by traveling to many
                                 different sites and purging groundwater for testing</p>
@@ -630,11 +629,10 @@
             <h1 class="section-header">Contact Me<span></span></h1>
             <div class="section-content">
                 <div id="contact-info">
-                    Phone Number: (912)-656-0931 <br>
-                    Personal Email: zactreese@gmail.com <br>
+                    Email: zactreese@gmail.com <br>
                 </div>
                 <div id="social-section">
-                    <a href="#" onclick="navigator.clipboard.writeText('zactreese@gmail.com'); return false;"
+                    <a href="#" onclick="copyEmailAndShowToast(); return false;"
                        class="social-icon" title="Click to copy email"><i class="fa fa-at fa-lg"></i></a>
                     <a href="https://github.com/zacharyreese" class="social-icon"><i class="fa fa-github fa-lg"></i></a>
                     <a href="https://www.linkedin.com/in/zac-reese" class="social-icon"><i
@@ -653,6 +651,7 @@
         <script src="js/projectcard.js"></script>
     </div>
 </div>
+<div id="toast" class="toast"></div>
 </body>
 
 </html>
