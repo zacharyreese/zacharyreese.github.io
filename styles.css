@@ -124,8 +124,22 @@ body {
 }
 
 .centered-content {
-    width: 50%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .centered-content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .centered-content {
+        width: 70%;
+    }
 }
 
 .info-section {
@@ -496,5 +510,44 @@ body {
 .toast.show {
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #skillsDisplay {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #skillsChart {
+        margin: 15px auto;
+        display: block;
+    }
+
+    #otherSkills {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+    }
+
+    #jumbo {
+        height: 50vh;
+    }
+
+    #super-center h1 {
+        font-size: 2em;
+    }
+
+    #super-center p {
+        font-size: 1.2em;
+    }
+
+    #social-section-top {
+        top: 82%;
+    }
 }
  

@@ -194,3 +194,36 @@
 .card-graph span {
     opacity: 0.0;
 }
+
+/* Mobile styles for cards */
+/* @media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .card .backdrop img {
+        width: 80px;
+        height: 80px;
+        margin: 20px auto;
+    }
+
+    .card .card-details {
+        position: relative;
+        top: 0;
+        padding-bottom: 50px;
+    }
+
+    .card:hover .backdrop img {
+        margin-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .row {
+        margin-left: 0;
+    }
+} */
