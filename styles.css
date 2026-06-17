@@ -182,6 +182,16 @@ body {
 }
 */
 
+button.social-icon {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    vertical-align: middle;
+}
 .social-icon i {
     background: #fff;
     width: 20px;
