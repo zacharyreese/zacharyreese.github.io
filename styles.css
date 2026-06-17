@@ -67,14 +67,14 @@ body {
 
 #super-center h1 {
     color: #fff;
-    font-size: 3em;
+    font-size: clamp(1.8em, 9vw, 3em);
     text-align: center;
 }
 
 #super-center p {
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(1em, 4.5vw, 1.5em);
 }
 
 #super-center:hover{
@@ -311,8 +311,11 @@ button.social-icon {
     }
 
     .timeline .event:before {
-        left: -0.5px;
-        top: 35px;
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        margin-bottom: 8px;
         background-color: #4298c3;
         color: white;
         padding: 2px 8px 2px 8px;
@@ -320,16 +323,14 @@ button.social-icon {
         text-align: left;
         font-weight: 400;
         font-size: 0.9em;
-        min-width: 120px;
     }
 
     .timeline .event h3 {
-        white-space: nowrap;
-        overflow: hidden;
+        white-space: normal;
+        overflow: visible;
     }
 
     .timeline .event div {
-        top: 27px;
         padding: 10px 0px 10px 0px;
         position: relative;
     }
@@ -413,6 +414,34 @@ button.social-icon {
     list-style: none;
 }
 
+@media (max-width: 800px) {
+    #skillsDisplay,
+    #otherSkills {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #skillsLegend {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    #skillsChart {
+        display: block;
+        margin: 15px auto;
+    }
+
+    #otherSkills {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+}
+
 /*This is the design for the skills chart legend*/
 .doughnut-legend {
     float: left;
@@ -463,27 +492,17 @@ button.social-icon {
 }
 
 .row {
-    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .codeBtn {
-    margin-left: 90px !important;
     text-decoration: none !important;
     border: 1px solid white;
     border-radius: 5px !important;
     padding: 3px !important;
-    
-}
-
-@media only screen and (max-width:1000px) {
-    .container {
-        width: 130% !important;
-        margin-left: -100px !important;
-        max-width: none !important;
-    }
-    .card {
-        margin-left: -5px;
-    }
 }
 
 /* Toast Notification */
@@ -510,5 +529,28 @@ button.social-icon {
 
 #super-center:hover {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    * {
+        letter-spacing: 1px;
+    }
+
+    #jumbo {
+        height: 60vh;
+    }
+
+    #super-center {
+        top: 45%;
+    }
+
+    .info-section > h1 {
+        font-size: 1.9em;
+    }
+
+    .info-section > div {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 }
  

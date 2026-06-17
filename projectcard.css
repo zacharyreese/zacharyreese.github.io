@@ -26,8 +26,6 @@
     height: 300px;
     border-radius: 8px;
     border: 1px solid #2d292f;
-    margin-right: 10px;
-    margin-bottom: 5px;
 }
 
 .card .backdrop {
@@ -59,14 +57,27 @@
     margin: 30px auto;
 }
 
-.card:hover .backdrop img {
+@media (hover: hover) {
+    .card:hover .backdrop img {
+        margin-top: 200px;
+        width: 0;
+        height: 0;
+        border: 0px solid #00f;
+    }
+
+    .card:hover .backdrop span {
+        bottom: -50px;
+    }
+}
+
+.card.is-open .backdrop img {
     margin-top: 200px;
     width: 0;
     height: 0;
     border: 0px solid #00f;
 }
 
-.card:hover .backdrop span {
+.card.is-open .backdrop span {
     bottom: -50px;
 }
 
@@ -83,7 +94,13 @@
     color: #fff;
 }
 
-.card:hover .card-details {
+@media (hover: hover) {
+    .card:hover .card-details {
+        top: 0;
+    }
+}
+
+.card.is-open .card-details {
     top: 0;
 }
 
@@ -149,11 +166,47 @@
     text-align: center;
 }
 
-.card:hover .card-graph {
+@media (hover: hover) {
+    .card:hover .card-graph {
+        display: inline;
+    }
+
+    .card-graph:hover {
+        right: 0px;
+        top: 0px;
+        width: 200px;
+        height: 250px;
+        border-radius: 0 0 0 25px;
+        background: rgba(68, 85, 102, 0.9)!important;
+        overflow: visible;
+    }
+
+    .card-graph:hover canvas {
+        opacity: 1;
+        width: 180px;
+        height: 180px;
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: visible;
+    }
+
+    .card-graph:hover h4 {
+        opacity: 1;
+    }
+
+    .card-graph:hover span {
+        opacity: 1;
+    }
+}
+
+.card.is-open .card-graph {
     display: inline;
 }
 
-.card-graph:hover {
+.card-graph.is-open {
     right: 0px;
     top: 0px;
     width: 200px;
@@ -163,7 +216,7 @@
     overflow: visible;
 }
 
-.card-graph:hover canvas {
+.card-graph.is-open canvas {
     opacity: 1;
     width: 180px;
     height: 180px;
@@ -175,11 +228,11 @@
     overflow: visible;
 }
 
-.card-graph:hover h4 {
+.card-graph.is-open h4 {
     opacity: 1;
 }
 
-.card-graph:hover span {
+.card-graph.is-open span {
     opacity: 1;
 }
 

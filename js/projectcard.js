@@ -52,15 +52,13 @@ function convertDataToPercentage(data) {
     return data;
 }
 
-$(".card-graph").hover(function () {
+function buildLanguageGraph(graphDiv) {
     $("canvas").remove(".graphContent");
 
-    var graphDiv = $(this);
     graphDiv.append($("<canvas class='graphContent'></canvas>"));
-    var graphCanvas = $(this).find("canvas")[0];
+    var graphCanvas = graphDiv.find("canvas")[0];
     var ctx = graphCanvas.getContext('2d');
     setTimeout(function () {
-        console.log(ctx);
         var userName = graphDiv.data("user");
         var repoName = graphDiv.data("repo");
         if (ctx != null) {
@@ -88,4 +86,41 @@ $(".card-graph").hover(function () {
             });
         }
     }, 400);
+}
+
+$(".card-graph").hover(function () {
+    buildLanguageGraph($(this));
 });
+
+// Touch / no-hover support: tap a card to toggle its details, tap the
+// language graph to expand it. Hover devices keep their original behavior.
+var supportsHover = window.matchMedia && window.matchMedia("(hover: hover)").matches;
+
+if (!supportsHover) {
+    $(".card").on("click", function (e) {
+        // Let links/buttons (e.g. "View Code") behave normally.
+        if ($(e.target).closest("a, button").length) {
+            return;
+        }
+
+        var $card = $(this);
+
+        // Tapping the language graph toggles just the graph.
+        var $graph = $(e.target).closest(".card-graph");
+        if ($graph.length && $card.hasClass("is-open")) {
+            if (!$graph.hasClass("is-open")) {
+                buildLanguageGraph($graph);
+            }
+            $graph.toggleClass("is-open");
+            return;
+        }
+
+        // Otherwise toggle the card, closing any other open cards.
+        var willOpen = !$card.hasClass("is-open");
+        $(".card").removeClass("is-open");
+        $(".card-graph").removeClass("is-open");
+        if (willOpen) {
+            $card.addClass("is-open");
+        }
+    });
+}
