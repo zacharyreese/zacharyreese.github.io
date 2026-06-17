@@ -4,13 +4,12 @@
 
 
 function copyEmailAndShowToast() {
+    var toast = document.getElementById('toast');
     navigator.clipboard.writeText('zactreese@gmail.com');
-    
-    const toast = document.getElementById('toast');
+
     toast.textContent = 'Email Copied! 💌';
     toast.classList.add('show');
-    
-    setTimeout(function() {
+    setTimeout(function () {
         toast.classList.remove('show');
     }, 3000);
 }
